@@ -38,6 +38,14 @@ for _, lsp in ipairs(yaml_servers) do
   }
 end
 
+-- go config
+lspconfig.gopls.setup {
+  on_attach = nvlsp.on_attach,
+  on_init = nvlsp.on_init,
+  capabilities = nvlsp.capabilities,
+  filetypes = { "go" },
+}
+
 -- configuring single server, example: typescript
 -- lspconfig.tsserver.setup {
 --   on_attach = nvlsp.on_attach,

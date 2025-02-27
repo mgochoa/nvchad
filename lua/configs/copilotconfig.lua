@@ -3,7 +3,7 @@ return {
     enabled = false,
   },
   suggestion = {
-    enabled = false,
+    enabled = true,
   },
   -- panel = {
   --   enabled = true,
